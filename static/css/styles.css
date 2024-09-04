@@ -1,0 +1,137 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;  /* Use a clean and classic font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  /* Light grey background color */
+}
+
+/* Style for header */
+header {
+    margin: 0;
+    background-color: #143a3a;  /* Dark background for the header */
+    color: #fff;  /* White text color */
+    padding: 10px 0;  /* Padding around the header */
+    text-align: center;
+}
+
+nav a {
+    color: #fff;  /* White text color for navigation links */
+    text-decoration: none;  /* Remove underline from links */
+    margin: 0 15px;  /* Space between links */
+}
+
+nav a:hover {
+    text-decoration: underline;  /* Underline on hover */
+}
+
+/* Style for the content area */
+.content {
+    color: #252929;
+    max-width: 800px;  /* Limit the width of the content */
+    margin: 20px auto;  /* Center the content horizontally */
+    padding: 20px;
+    background-color: #fff;  /* White background for the content */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+
+
+/* General container styles */
+/* General container styles */
+
+.container {
+    display: flex;  /* Enable flexbox layout */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100vh;  /* Full viewport height */
+    margin: 0;  /* Remove default margin */
+    background-color: #f4f4f4;  /* Light grey background for contrast */
+}
+
+.login-container,
+.signup-container {
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;  /* Limit the width of the forms */
+    margin: 0 auto;  /* Center the containers */
+    padding: 20px;
+    background-color: #143a3a; /* White background */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Style for form links */
+p {
+    margin-top: 15px;  /* Space above the paragraph */
+}
+
+a {
+    color: #007bff;  /* Blue text color */
+    text-decoration: none;  /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline;  /* Underline on hover */
+}
+
+
+/* Style for flash messages */
+.flash-messages {
+    margin-bottom: 20px;  /* Space below the flash messages */
+}
+
+.flash-message {
+    padding: 10px;
+    background-color: #f8d7da;  /* Light red background */
+    color: #721c24;  /* Dark red text color */
+    border: 1px solid #f5c6cb;  /* Light red border */
+    border-radius: 4px;  /* Rounded corners */
+    margin-bottom: 10px;  /* Space between flash messages */
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px;  /* Space below form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;  /* Space below label */
+    font-weight: bold;  /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;  /* Full width of the container */
+    padding: 10px;
+    border: 1px solid #ddd;  /* Light grey border */
+    border-radius: 4px;  /* Rounded corners */
+    box-sizing: border-box;  /* Include padding and border in width */
+}
+
+input[type="submit"] {
+    background-color: #007bff;  /* Blue background color */
+    color: #fff;  /* White text color */
+    border: none;  /* Remove border */
+    padding: 10px 15px;  /* Padding inside the button */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+
+/* Style for footer */
+footer {
+    background-color: #143a3a; /* Dark background for the footer */
+    color: #fff;  /* White text color */
+    text-align: center;
+    padding: 10px 0;  /* Padding around the footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specify the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    
+    <!-- Title of the webpage, defined by child templates using block title -->
+    <title>{% block title %}{% endblock %}</title>
+    
+    <!-- Link to an external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header section of the webpage -->
+    <header>
+        <!-- Main heading of the webpage -->
+        <h1>My Flask App</h1>
+        
+        <!-- Navigation bar with links to different pages -->
+        <nav>
+            <!-- Link to the home page -->
+            <a href="{{ url_for('home') }}">Home</a> |
+            
+            <!-- Link to the login page -->
+            <a href="{{ url_for('login') }}">Login</a> |
+            
+            <!-- Link to the sign-up page -->
+            <a href="{{ url_for('signup') }}">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Main content area where child templates will insert their content -->
+    <div class="content">
+        <!-- This block is defined by child templates to insert their own content -->
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer section of the webpage -->
+    <footer>
+        <!-- Footer content, such as copyright information -->
+        <p>&copy; 2024 My Flask App</p>
+    </footer>
+</body>
+</html>
